@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jevin Menezes" />
     <title>Jevin Menezes | Personal website, hosted directly from my GitHub repository.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117510775-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,5 +20,9 @@
   <body>
     <h1>Hi there, I'm Jevin Menezes!</h1>
     <p>Just starting here to set up my GitHub personal webpage. The site's under construction and will be up with more details.</p>
+    <p>{{sentence}}</p>
+    <div>
+      <input type="text" ng-model="sentence">
+    </div>
   </body>
 </html>
